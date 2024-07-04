@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>X Login</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            .header{
+                width: 50px;
+                height: 100px;
+            }
+            .main{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                height: auto;
+                align-items: center;
+            }
+            .menu{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 60px 5fr 30px 1fr;
+            }
+            .account{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+            }
+            .h{
+                color: white;
+                width: 600px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 64px;
+                font-weight: bold;
+            }
+            .j{
+                margin: 0px;
+                color: white;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .part{
+                display: grid;
+                place-items: center;
+                width: 600px;
+                height: 400px;
+            }
+            .picture{
+                width: 400px;
+                height: 350px;
+            }
+
+            button{
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .google{
+                width: 25px;
+                vertical-align: middle;
+            }
+            .apple{
+                width: 20px;
+                vertical-align: middle;
+            }
+            p{
+                color: white;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            .or{
+                display: grid;
+                width: 300px;
+                grid-template-columns: 2fr 1fr 2fr;
+            }
+            .new{
+                background-color: #1C9FDD;
+                color: white;
+                font-weight: bold;
+            }
+            .old{
+                background-color: black;
+                color: #1C9FDD;
+                border: solid 1px white;
+            }
+            .tos{
+                width: 300px;
+                font-size: 10px;
+                color: gray;
+                text-align: justify;
+            }
+            .separator{
+                width: 40px;
+            }
+            hr{
+                background-color: white;
+                border: none;
+            }
+            a{
+                text-decoration: none;
+                color: #1C9FDD;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="main">
+            
+            <div class="separator"></div>
+
+            <div class="part">
+                <img src="Assets/Twitter_new_X_logo.png" class="picture">
+            </div>
+            
+            <div class="separator"></div>
+
+            <div class="menu">
+                <p class="h">Happening now</p>
+                <p class="j">Join today.</p>
+                <div class="account">
+                    <button><img src="Assets/Google_Icons-09-512.webp" class="google">
+                        &nbsp;Sign up with Google</button>
+                    <button><img src="Assets/apple-logo_icon-icons.webp" class="apple">
+                        &nbsp;Sign up with Apple</button>
+                    <div class="or">
+                        <hr size="1px" width="130px" align="left">
+                        <p align="center">or</p>
+                        <hr size="1px" width="130px">
+                    </div>
+                    <button class="new">Create account</button>
+                    <p class="tos">By signing up, you agree to the <a href="https://x.com/en/tos">Terms of Service</a> and <a href="https://x.com/en/privacy">Privacy Policy</a>, including <a href="https://help.x.com/en/rules-and-policies/x-cookies">Cookie Use.</a></p>
+                </div>
+                <p>Already have an account?</p>
+                <button class="old">Sign in</button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
