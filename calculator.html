@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>calc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <style>
+            html,body{
+                height: 100%;
+                margin: 0;
+            }
+            body{
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .body{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                width: 310px;
+                height: 500px;
+                border-radius: 40px;
+                gap: 10px;
+                padding: 10px;
+                background-color: black;
+            }
+            .zero{
+                grid-row: 6/7;
+                grid-column: 1/3;
+                width: 150px;
+            }
+            button{
+                border-radius: 40px;
+                height: 70px;
+                width: 70px;
+                background-color: #202020;
+                border: none;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .input{
+                width: 280px;
+                height: 50px;
+                color: white;
+                font-size: 42px;
+                text-align: right;
+                grid-row: 1/2;
+                grid-column: 1/5;
+                background-color: black;
+                border: none;
+                caret-color: transparent;
+                margin-left: 10px;
+                padding-top: 20px;
+                outline: none;
+            }
+            .sp{
+                font-size: 18px;
+                background-color: #d4d4d2;
+                color: #505050;
+            }
+            .op{
+                background-color: #ff9500;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <center>
+            <h1>Calculator</h1>
+            <div class="body">
+                
+                <input id="text_box" type="text" class="input" placeholder="0">
+
+                <button class="sp" onclick="c_disp()">AC</button>
+                <button class="sp" onclick="bs()">C</button>
+                <button class="sp" onclick="per()">%</button>
+                <button onclick="append('/')" class="op">÷</button>
+
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('*')" class="op">×</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('-')" class="op">−</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('+')" class="op">+</button>
+
+                <button onclick="append('0')" class="zero">0</button>
+                <button onclick="append('.')">.</button>
+                <button onclick="equal()" class="op">=</button>
+
+            </div>
+        </center>
+        <script>
+            var disp = document.getElementById('text_box');
+
+            function append(value){
+                disp.value += value;
+            }
+
+            function c_disp(){
+                disp.value = "";
+            }
+
+            function bs(){
+                var temp = disp.value;
+                disp.value = temp.slice(0, -1);
+            }
+
+            function per(){
+                var temp = disp.value;
+                disp.value = temp/100;
+            }
+
+            function equal(){
+                var str = disp.value;
+                try{
+                    disp.value = eval(str);
+                }catch(e){
+                    disp.value = "Error";
+                    console.log(e);
+                }
+            }
+        </script>
+    </body>
+</html>
