@@ -1,0 +1,60 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alp{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.globe{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.space{
+    width: 230px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.num{
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.enter{
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.shift,.back{
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#text-field{
+    width: 590px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
