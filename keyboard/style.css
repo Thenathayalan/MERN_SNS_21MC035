@@ -52,6 +52,9 @@ body{
     margin-top: 10px;
     margin-left: 10px;
 }
+.display-3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #text-field{
     width: 590px;
     text-align: left;

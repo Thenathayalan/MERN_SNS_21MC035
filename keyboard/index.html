@@ -26,23 +26,12 @@
         <div class="container text-center mx-auto">
 
             <h1 class="display-3 text-warning mb-5">Virtual Keyboard</h1>
-
-            <input id="text-field" type="text" placeholder="Start Typing ... ">
-
-            <div class="row row1 justify-content-center">
-                <button class="alp" onclick="append('1')">1</button>
-                <button class="alp" onclick="append('2')">2</button>
-                <button class="alp" onclick="append('3')">3</button>
-                <button class="alp" onclick="append('4')">4</button>
-                <button class="alp" onclick="append('5')">5</button>
-                <button class="alp" onclick="append('6')">6</button>
-                <button class="alp" onclick="append('7')">7</button>
-                <button class="alp" onclick="append('8')">8</button>
-                <button class="alp" onclick="append('9')">9</button>
-                <button class="alp" onclick="append('0')">0</button>
+            
+            <div>
+                <textarea id="text-field" placeholder="START TYPING ... "></textarea>
             </div>
 
-            <div class="row row2 justify-content-center">
+            <div class="row justify-content-center">
                 <button class="alp" onclick="append('q')">q</button>
                 <button class="alp" onclick="append('w')">w</button>
                 <button class="alp" onclick="append('e')">e</button>
@@ -55,7 +44,7 @@
                 <button class="alp" onclick="append('p')">p</button>
             </div>
 
-            <div class="row row3 justify-content-center">
+            <div class="row justify-content-center">
                 <button class="alp" onclick="append('a')">a</button>
                 <button class="alp" onclick="append('s')">s</button>
                 <button class="alp" onclick="append('d')">d</button>
@@ -67,7 +56,7 @@
                 <button class="alp" onclick="append('l')">l</button>
             </div>
 
-            <div class="row row4 justify-content-center">
+            <div class="row justify-content-center">
                 <button class="shift" onclick="toggleShift()"><i class="bi bi-shift"></i></button>
                 <button class="alp" onclick="append('z')">z</button>
                 <button class="alp" onclick="append('x')">x</button>
@@ -79,13 +68,13 @@
                 <button class="back" onclick="backspace()"><i class="bi bi-backspace"></i></button>
             </div>
 
-            <div class="row row5 justify-content-center">
-                <button class="num" onclick="shift"><i class="bi bi-123"></i></button>
+            <div class="row justify-content-center">
+                <button class="num" onclick="num()"><i class="bi bi-123"></i></button>
                 <button class="alp" onclick="z">/</button>
                 <button class="globe" onclick="x"><i class="bi bi-globe"></i></button>
                 <button class="space" onclick="append(' ')"></button>
                 <button class="alp" onclick="v">.</button>
-                <button class="enter bg-warning" onclick="b"><i class="bi bi-arrow-right"></i></button>
+                <button class="enter bg-warning" onclick="enter()"><i class="bi bi-arrow-right"></i></button>
             </div>
 
         </div>
