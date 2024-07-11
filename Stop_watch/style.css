@@ -1,0 +1,17 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    font-weight: bold;
+    border-radius: 20px;
+}
+.display-1{
+    font-weight: bold;
+    font-size: 64px;
+}
